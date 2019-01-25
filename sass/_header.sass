@@ -4,10 +4,12 @@
   opacity: 0.9
   &-wrap
     display: flex
+    justify-content: space-around
     &__mini
       width: 60px
       display: flex
       text-align: center
+      justify-content: left
       &__img
         background-image: url('../img/menu.png')
         width: 17px
@@ -22,17 +24,19 @@
         padding-top: 12px
   &-menu
     display: flex
-    width: 792px
-    height: 13px
-    justify-content: space-around
+    justify-content: left
     margin-top: 22px
     margin-bottom: 22px
     &__text
       font-size: 14px
+      padding-right: 36px
       font-weight: 400
+      color: #000000
       text-decoration: underline
+      &:hover
+          cursor: pointer
   &-contacts
-    margin: 13px auto
+    margin: 13px 0 13px auto
     text-align: right
     
     &__phone a
@@ -43,12 +47,13 @@
     .button-small
       width: 176px
       height: 14px
-      cursor: pointer
       color: #22bac1
       font-size: 13px
       text-decoration: underline
       border: none
       background-color: #e8e8e8
       padding-right: 0
+      &:hover
+          cursor: pointer
 
 
