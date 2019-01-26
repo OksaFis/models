@@ -1,4 +1,4 @@
-.feedback
+.types
   background-color: #ffffff
   padding-bottom: 28px
   .section-title
@@ -21,61 +21,66 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-  .card
+  &__card
+    display: flex
     max-width: 370px
     height: 680px
     text-align: center
-    justify-content: center
-    transition: 0.2s
+    align-items: center
     background-color: #ffffff
     padding-top: 33px
     margin-bottom: 30px
+    flex-direction: column
+    position: relative
     &:hover
       box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
-    &_title
+    &:hover img 
+      filter: none
+    &:hover button 
+      background-color: #23bac1
+      border: 1px solid #23bac1
+      color: #fff
+    &-title
       padding-bottom: 24px
       font-size: 20px
       font-weight: 400
-    &_img
+    &-img
       width: 300px
       height: 220px
       margin-left: 35px
       margin-right: 35px
-      padding-bottom: 35px
-    &_text
-      color: #000000
-      font-size: 13px
-      text-align: center
-      margin: 0 auto 55px auto
-      height: 224px
-      b
-        line-height: 21px
-        font-size: 15px
-      hr
-        float: center
-        width: 9px
-        height: 2px
-        background-color: #23bac1
-        border: #23bac1
-        margin-top: 5px 
-        margin-bottom: 0 
-        padding: 0
-    &__button
+      margin-bottom: 35px
+    &-img>img 
+      width: 300px
+      min-height: 220px
+      object-fit: cover
+      filter: grayscale(100%)
+      transition: all 0.5s
+    &-variants 
+      max-width: 234px
+      font-weight: 700
+      &-item 
+        margin: 0 0
+        font-size: 14px
+        line-height: 31px
+    &-button 
+      position: absolute
+      bottom: 40px
+      border: 1px solid #efefef
+      background-color: #ffffff
+      font-family: 'Proxima Nova Bold' !important
       width: 230px
       height: 55px
-      margin-bottom: 40px
-      border: 1px solid #eeeeee
-      background-color: #ffffff
-      color: #000000
+      color: #000
       font-size: 13px
+      font-weight: 400
+      letter-spacing: 0.38px
       text-transform: uppercase
-      letter-spacing: 0.33px
-      &:hover
-        cursor: pointer
-        background-color: #23bac1
-        color: #ffffff
-        font-family: 'Proxima Nova-Semibold'
-        font-size: 13px
-        text-transform: uppercase
-        letter-spacing: 0.38px
-        border: none 
+  &__line 
+    width: 9px
+    height: 2px
+.line 
+	height: 2px
+	width: 9px
+	margin: 0 auto
+	background: #23bac1
