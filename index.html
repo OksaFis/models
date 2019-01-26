@@ -30,9 +30,9 @@
         <div class="header-contacts__phone">
           <a class="header_phone" href="tel:+78008913333">8 800 891-33-33</a>
         </div><!--header-contacts__phone-->
-        <div class="header-contacts__button">
-          <button class="button-small" id="button-callback">Заказать обратный звонок</button>
-        </div><!--header-contacts__button-->
+        <div class="header-contacts__link">
+        <a href="#" class="header_link">Заказать обратный звонок</a>
+        </div><!--header-contacts__link-->
       </div><!--header-contacts-->
     </div> <!--header-wrap-->
     </div>
@@ -60,7 +60,7 @@
             </div><!--main-form__title-->
             <form action="mailer/smart.php" method="POST">
               <input type="text" name="fio" class="input main-form__input" required placeholder="Ваше имя">
-              <input type="tel" name="phone" class="input main-form__input" required placeholder="Контактный телефон">
+              <input type="tel" pattern="2[0-9]{3}-[0-9]{3}" name="tel" class="input main-form__input" required placeholder="Контактный телефон">
               <input type="email" name="mail" class="input main-form__input" required placeholder="Электронная почта">
               <button type="submit" class="button main-form__button">Оставить заявку
               </button>
@@ -73,11 +73,11 @@
   <section class="feedback">
     <div class="container">
 
-      <h1 class="section-title section-title_center">Виды макетов</h1><br><hr><br>
+      <h1 class="section-title section-title_center">Виды макетов</h1>
       <h2 class="section-subtitle">Создаем макеты от небольших домов до космических станций</h2>
       <div class="feedback-wrap">
           
-        <div class="card wow fadeInUp" data-wow-delay="0.2s"> 
+        <div class="card"> 
           <div class="card_title">Архитектурные макеты</div>
             <div class="card_img-wrap">
             <img src="img/feedback/fedback_1.png" alt="" class="card_img">    
@@ -94,7 +94,7 @@
               <button type="submit" class="button card__button">Рассчитать стоимость</button>
         </div><!--card-->
 
-        <div class="card wow fadeInUp" data-wow-delay="0.4s">
+        <div class="card">
           <div class="card_title">Градостроительные макеты</div>
             <div class="card_img-wrap">   
               <img src="img/feedback/fedback_2.png" alt="" class="card_img">
@@ -109,7 +109,7 @@
                   <button type="submit" class="button card__button">Рассчитать стоимость</button>
         </div><!--card-->
 
-        <div class="card wow fadeInUp" data-wow-delay="0.8s">
+        <div class="card">
           <div class="card_title">Промышленные макеты</div>
             <div class="card_img-wrap">
               <img src="img/feedback/fedback_3.png" alt="" class="card_img">
@@ -125,7 +125,7 @@
               <button type="submit" class="button card__button">Рассчитать стоимость</button>
         </div><!--card-->
 
-        <div class="card wow fadeInUp" data-wow-delay="1.0s">
+        <div class="card">
           <div class="card_title">Интерьерные макеты</div>
             <div class="card_img-wrap">
               <img src="img/feedback/fedback_4.png" alt="" class="card_img">
@@ -141,7 +141,7 @@
               <button type="submit" class="button card__button">Рассчитать стоимость</button>
         </div><!--card-->
 
-        <div class="card wow fadeInUp" data-wow-delay="1.2s">
+        <div class="card">
           <div class="card_title">Ландшафтные макеты</div>
           <div class="card_img-wrap">
             <img src="img/feedback/fedback_5.png" alt="" class="card_img">
@@ -156,13 +156,12 @@
             <button type="submit" class="button card__button">Рассчитать стоимость</button>
         </div><!--card-->
 
-        <div class="card wow fadeInUp" data-wow-delay="1.4s">
+        <div class="card">
           <div class="card_title">Индивидуальные макеты</div>
           <div class="card_img-wrap">
             <img src="img/feedback/fedback_6.png" alt="" class="card_img">
           </div>
-            <h3 class="card_text"><b>Мы может воплотить в жизнь любые идеи, с применением высоких технологий, максимальной детализацией 
-            и совершенно любых размеров</b></h3>
+            <h3 class="card_text"><b>Мы можем воплотить в жизнь<br>любые идеи, с применением<br>высоких технологий,<br>максимальной детализацией<br>и совершенно любых размеров</b></h3>
             <button type="submit" class="button card__button">Рассчитать стоимость</button>
         </div><!--card-->
       </div><!--price-wrap-->

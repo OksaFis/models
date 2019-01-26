@@ -10,12 +10,14 @@
 @media (min-width: 992px) and (max-width: 1200px) 
   .container 
     width: 100%
+    
   .header
     &-wrap
       &__mini
         display: none
   .main
     &-wrap
+      justify-content: space-around
     &-text
       &__title
       &__subtitle
@@ -24,6 +26,9 @@
       
       &__input
       &__button
+  .feedback
+    &-wrap
+      justify-content: space-around
 @media (min-width: 768px) and (max-width: 992px) 
   .container 
     width: 100%
@@ -32,7 +37,7 @@
     &-wrap
       &__mini
         height: 30px
-        margin: 15px auto
+        margin: 15px 0
         &__img
         &__text
     &-menu
@@ -57,6 +62,9 @@
       width: 300px
       &__input
       &__button
+  .feedback
+    &-wrap
+      justify-content: space-around
 
 @media (min-width: 576px) and (max-width: 767px)
   .container
@@ -66,7 +74,7 @@
     &-wrap
       &__mini
         height: 30px
-        margin: 12px auto
+        margin: 12px 0
     &-menu
       display: none
   .main
@@ -89,7 +97,14 @@
         padding-bottom: 20px
     &-form
       margin-top: 30px
- 
+  .feedback
+    .section-title
+      padding-top: 40px
+    .section-subtitle
+      padding-bottom: 40px
+    &-wrap
+      justify-content: center
+
 @media (min-width: 530px) and (max-width: 582px) 
   .container 
     padding-left: 10px !important
@@ -98,7 +113,7 @@
     &-wrap
       &__mini
         height: 30px
-        margin: 10px auto
+        margin: 10px 0
     &-menu
       display: none
     &-contacts
@@ -126,6 +141,13 @@
       width: 300px
       &__input
       &__button
+  .feedback
+    .section-title
+      padding-top: 30px
+    .section-subtitle
+      padding-bottom: 30px
+    &-wrap
+      justify-content: center
 @media (max-width: 576px) 
   .container 
     width: 100%
@@ -137,7 +159,7 @@
     &-wrap
       &__mini
         height: 30px
-        margin: 10px auto
+        margin: 10px 0
     &-menu
       display: none
     &-contacts
@@ -170,6 +192,13 @@
     &-form
       width: 300px
       margin-top: 30px
+  .feedback
+    .section-title
+      padding-top: 30px
+    .section-subtitle
+      padding-bottom: 30px
+    &-wrap
+      justify-content: center
 
   
 
