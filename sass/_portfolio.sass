@@ -1,0 +1,104 @@
+.portfolio
+    padding:
+        bottom: 99px
+    background-color: #f6f6f6
+    .section-title
+      padding-top: 96px
+      &:after 
+        display: block
+        content: ''
+        display: block
+        background-image: linear-gradient(45deg, #1c8fd4 0%, #23bac1 100%)
+        margin-bottom: 45px
+        margin-top: 40px
+        margin-bottom: 40px
+        margin-left: auto
+        margin-right: auto
+        width: 32px
+        height: 3px
+    .section-subtitle
+      padding-top: 40px
+      padding-bottom: 99px
+.slider
+  display: flex !important
+  justify-content: space-around
+  align-items: center
+  margin: 0 
+  width: 1168px
+  &__item
+    display: flex !important
+    justify-content: space-around
+    align-items: center
+    width: 906px
+    height: 346px
+    margin: 0 
+    &-img
+      width: 409px
+      height: 340px
+      margin: 0
+      padding: 0
+    &-text
+      display: flex
+      flex-direction: column
+      max-width: 409px
+      min-height: 340px
+      margin: 0
+    .title
+      font-size: 24px
+      font-weight: 400
+      margin: 0 0 50px 0 
+    .subtitle-descr
+      font-size: 12px
+      font-weight: 300
+      line-height: 20px
+      margin: 0 0 18px 0 
+    .subtitle
+      font-size: 16px
+      font-weight: 300
+      line-height: 20px
+      margin: 0 0 55px 0 
+  .wrapper
+    display: flex
+    justify-content: space-between
+  .wrap
+    display: flex
+    max-width: 400px
+    flex-direction: column
+  .descr
+    display: block
+  .feature
+    display: block
+    font-size: 12px
+    line-height: 20px
+  .size
+    font-size: 16px
+    line-height: 20px
+.slider-button
+  cursor: pointer
+  background-color: #23bac1
+  border: 1px solid #23bac1
+  width: 216px
+  height: 60px
+  color: #fff
+  font-size: 13px
+  font-weight: 400
+  letter-spacing: 0.33px
+  text-transform: uppercase
+  margin: 49px 0 0 0 
+.arrow
+  width: 14px
+  height: 26px
+  opacity: 0.5
+  position: absolute
+  
+  a:hover
+    cursor: pointer
+
+  &_right
+    right: 0
+    background: url('../img/portfolio/back_right.png') no-repeat center
+      
+  &_left
+    left: 0
+    background: url('../img/portfolio/back_left.png') no-repeat center
+        

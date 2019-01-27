@@ -29,6 +29,18 @@
   .types
     &-wrap
       justify-content: space-around
+  .portfolio
+  .slider
+    margin: 0 
+    width: 100%
+    &__item
+      display: block
+  .customers
+    &-wrap
+      justify-content: space-around
+  .goal
+    width: 400px
+
 @media (min-width: 768px) and (max-width: 992px) 
   .container 
     width: 100%
@@ -79,10 +91,33 @@
         background-color: #23bac1
         color: #ffffff
         border: none
+  .portfolio
+  .slider
+    margin: 0 auto
+    width: 80%
+    justify-content: center
+    &__item
+      display: block !important
+      margin: 0 auto
+      width: 80%
+      text-align: center
+      &-img
+        margin: 0 auto
+      &-text
+        margin: 0 auto
+      .title
+        margin-top: 30px 
+        margin-bottom: 30px
+  .slider-button
+    margin: 30px auto 0 auto
+  .customers
+    &-wrap
+      justify-content: space-around
+  .goal
+    width: 350px
 @media (min-width: 576px) and (max-width: 767px)
   .container
     width: 100%
-   
   .header
     &-wrap
       &__mini
@@ -135,6 +170,28 @@
         background-color: #23bac1
         color: #ffffff
         border: none
+  .portfolio
+  .slider
+    margin: 0 auto
+    width: 80%
+    justify-content: center
+    &__item
+      display: block !important
+      margin: 0 auto
+      width: 80%
+      text-align: center
+      &-img
+        margin: 0 auto
+      &-text
+        margin: 0 auto
+      .title
+        margin-top: 30px 
+        margin-bottom: 30px
+  .slider-button
+    margin: 30px auto 0 auto
+  .customers
+    &-wrap
+      justify-content: space-around
 
 @media (min-width: 530px) and (max-width: 582px) 
   .container 
@@ -197,6 +254,35 @@
         background-color: #23bac1
         color: #ffffff
         border: none
+  .portfolio
+  .slider
+    margin: 0 auto
+    width: 80%
+    justify-content: center
+    &__item
+      display: block !important
+      margin: 0 auto
+      width: 80%
+      text-align: center
+      &-img
+        margin: 0 auto
+      &-text
+        margin: 0 auto
+      .title
+        margin-top: 30px 
+        margin-bottom: 30px
+  .slider-button
+    margin: 30px auto 0 auto
+  .customers
+  .section_title
+    padding-top: 70px
+    padding-bottom: 60px
+
+  .customers-wrap
+    justify-content: center
+    padding-bottom: 25px
+  .goal
+    width: 400px
 
 @media (max-width: 576px) 
   .container 
@@ -270,8 +356,43 @@
         height: 50px  
         font-size: 10px 
         margin-bottom: 10px 
-  
+  .portfolio
+    .section-title
+      padding-top: 40px
+    .section-subtitle
+      padding-top: 10px
+      padding-bottom: 30px
 
-
-  
-
+  .slider
+    margin: 0 auto
+    width: 98%
+    justify-content: center
+    align-items: center
+    &__item
+      display: block !important
+      margin: 0 auto
+      width: 90%
+      text-align: center
+      &-img
+        margin: 0 auto
+        
+      &-subtitle
+        margin-bottom: 30px
+        
+      &-text 
+        margin: 0 auto
+      .title
+        margin-top: 20px 
+        margin-bottom: 20px
+  .slider-button
+    margin: 30px auto 0 auto
+  .customers
+  .section_title
+    padding-top: 50px
+    padding-bottom: 40px
+    font-size: 20px
+  .customers-wrap
+    justify-content: center
+    padding-bottom: 20px
+  .goal
+    width: 300px
