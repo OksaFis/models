@@ -331,7 +331,63 @@
               </div> <!--goal-->
           </div><!--customers-wrap-->
     </div> <!-- /.container -->
-  </section><!-- /.customers -->		
+  </section><!-- /.customers -->
+  
+  <section class="portfolio-client">
+    <div class="container">
+        <h1 class="section__title">Наши клиенты</h1>
+        <div class="slider-client">
+          
+            <div class="slider-client__item">
+                <img class="slider-client__item-img" src="img/client/1.png" alt="">
+            </div>
+            <div class="slider-client__item">
+                <img class="slider-client__item-img" src="img/client/2.png" alt="">
+            </div>
+            <div class="slider-client__item">
+                <img class="slider-client__item-img" src="img/client/3.png" alt="">
+            </div>
+            <div class="slider-client__item">
+                <img class="slider-client__item-img" src="img/client/4.png" alt="">
+            </div>
+            <div class="slider-client__item">
+                <img class="slider-client__item-img" src="img/client/5.png" alt="">
+            </div>
+            
+         
+            <!--slider-client__item-->
+        </div><!--slider-client-->
+    </div><!--container-->
+</section><!--section--> 
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-wrap">
+        
+      <div class="adress-wrap">
+        <div class="adress-img">
+            <img src="img/footer_img.png" alt="">
+        </div>
+        <div class="adress-text">
+          г. Москва, 
+          Автомоторная улица, 4А, стр.21
+        </div>
+      </div>
+
+      <div class="contacts-wrap">
+        <div class="contacts-wrap__phone">
+          <a class="contacts_phone" href="tel:+78008913333">8 800 891-33-33</a>
+        </div><!--contacts__phone-->
+        <div class="contacts-wrap__link">
+        <a href="#" class="contacts_link">Заказать обратный звонок</a>
+        </div><!--contacts__link-->
+      </div><!---contacts-wrap-->
+
+
+
+    </div>
+  </div>  
+</footer>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script></script>
     <script src="js/slick.min.js"></script>
@@ -343,9 +399,43 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
+        centerMode: false,
+        speed: 1500,
         arrows: true,
         nextArrow: '<div class="arrow arrow_right"></div>',
         prevArrow: '<div class="arrow arrow_left"></div>'
+      });
+    </script>
+    
+    <script>
+      $('.slider-client').slick({
+        slidesToShow: 4,
+        slidesToScroll: 5,
+        autoplay: false,
+        autoplaySpeed: 1500,
+        arrows: true,
+        nextArrow: '<div class="arrow-client arrow-client_right"></div>',
+        prevArrow: '<div class="arrow-client arrow-client_left"></div>',
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 1
+            }
+          }
+        ]
       });
 	  </script>
     
