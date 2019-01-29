@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  
+
   <header class="header">
     <div class="container">
       <div class="header-wrap">
@@ -33,7 +33,7 @@
           <a class="header_phone" href="tel:+78008913333">8 800 891-33-33</a>
         </div><!--header-contacts__phone-->
         <div class="header-contacts__link">
-        <a href="#" class="header_link">Заказать обратный звонок</a>
+        <a href="#" class="header_link" id="link">Заказать обратный звонок</a>
         </div><!--header-contacts__link-->
       </div><!--header-contacts-->
     </div> <!--header-wrap-->
@@ -62,9 +62,9 @@
             </div><!--main-form__title-->
             <form action="mailer/smart.php" method="POST">
               <input type="text" name="fio" class="input main-form__input" required placeholder="Ваше имя">
-              <input type="tel" pattern="2[0-9]{3}-[0-9]{3}" name="tel" class="input main-form__input" required placeholder="Контактный телефон">
+              <input type="tel" name="tel" class="input main-form__input mask" required placeholder="Контактный телефон">
               <input type="email" name="mail" class="input main-form__input" required placeholder="Электронная почта">
-              <button type="submit" class="button main-form__button">Оставить заявку
+              <button type="submit" id="main-button" class="button main-form__button">Оставить заявку
               </button>
             </form>
           </div><!--main-form-->
@@ -97,7 +97,7 @@
             <div class="line types__line"></div>
             <div class="types__card-variants-item">Гостиницы и санатории</div>
           </div>
-          <button class="button types__card-button">Рассчитать стоимость</button>
+          <button class="button types__card-button" id="types-button">Рассчитать стоимость</button>
         </div>
 
         <div class="types__card">
@@ -116,7 +116,7 @@
             <div class="line types__line"></div>
             <div class="types__card-variants-item">Мосты и тоннели</div>
           </div>
-          <button class="button types__card-button">Рассчитать стоимость</button>
+          <button class="button types__card-button" id="types-button">Рассчитать стоимость</button>
         </div>
 
         <div class="types__card">
@@ -137,7 +137,7 @@
             <div class="line types__line"></div>
             <div class="types__card-variants-item">Технологические линии</div>
           </div>
-          <button class="button types__card-button">Рассчитать стоимость</button>
+          <button class="button types__card-button"id="types-button" >Рассчитать стоимость</button>
         </div>
 
         <div class="types__card">
@@ -158,7 +158,7 @@
             <div class="line types__line"></div>
             <div class="types__card-variants-item">Заводы</div>
           </div>
-          <button class="button types__card-button">Рассчитать стоимость</button>
+          <button class="button types__card-button" id="types-button">Рассчитать стоимость</button>
         </div>
 
         <div class="types__card">
@@ -177,7 +177,7 @@
             <div class="line types__line"></div>
             <div class="types__card-variants-item">Участки</div>
           </div>
-          <button class="button types__card-button">Рассчитать стоимость</button>
+          <button class="button types__card-button"id="types-button" >Рассчитать стоимость</button>
         </div>
 
         <div class="types__card">
@@ -187,7 +187,7 @@
             <div class="types__card-variants-item">Мы можем воплотить в жизнь любые идеи, с применением высоких технологий,
               максимальной детализацией и совершенно любых размеров</div>
           </div>
-          <button class="button types__card-button">Рассчитать стоимость</button>
+          <button class="button types__card-button" id="types-button">Рассчитать стоимость</button>
         </div>
       </div>
     </div>
@@ -228,7 +228,7 @@
           </div>
           </div>
           </div><!--wrapper-->
-          <button class="button slider-button"> Заказать макет</button>
+          <button class="button slider-button" id="portfolio-button"> Заказать макет</button>
             </div>
           </div>
             <div class="slider__item">
@@ -260,7 +260,7 @@
                 </div>
                 </div>
                 </div><!--wrapper-->
-                <button class="button slider-button"> Заказать макет</button>
+                <button class="button slider-button" id="portfolio-button"> Заказать макет</button>
             </div>
             </div><!--slider__item-->
           </div><!--slider-->
@@ -360,6 +360,13 @@
     </div><!--container-->
 </section><!--section--> 
 
+<map class="footer-map">
+  <div class="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A883844b6e138ba4930a25c54003e332896e9680deb660c79fbbfa2cf43f6f163&amp;width=100%25&amp;height=420&amp;lang=ru_RU&amp;scroll=false"></script>
+  </div> <!--map-->       
+</footer>
+
+
 <footer class="footer">
   <div class="container">
     <div class="footer-wrap">
@@ -379,7 +386,7 @@
           <a class="contacts_phone" href="tel:+78008913333">8 800 891-33-33</a>
         </div><!--contacts__phone-->
         <div class="contacts-wrap__link">
-        <a href="#" class="contacts_link">Заказать обратный звонок</a>
+        <a href="#" class="contacts_link" id="link">Заказать обратный звонок</a>
         </div><!--contacts__link-->
       </div><!---contacts-wrap-->
 
@@ -389,7 +396,26 @@
   </div>  
 </footer>
 
+<div class="modal" id="modal-callback">
+  <div class="modal__dialog">
+    <div class="modal__close">&#10006;
+      </div>      
+        <div class="modal-form">
+          <div class="modal-form__title">Оставьте заявку и получите расчет стоимости макета в течение <b>30 минут</b>
+          </div><!--modal-form__title-->
+            <form action="mailer/smart.php" method="POST">
+              <input type="text" name="fio" class="input modal-form__input" required placeholder="Ваше имя">
+              <input type="tel" name="tel" class="input modal-form__input mask" required placeholder="Контактный телефон">
+              <input type="email" name="mail" class="input modal-form__input" required placeholder="Электронная почта">
+              <button type="submit" class="button modal-form__button">Оставить заявку
+              </button>
+            </form>
+        </div><!--modal-form-->
+  </div><!-- /modal__dialog -->
+</div>
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script></script>
+<script src="js/jquery.maskedinput.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
     
@@ -410,17 +436,24 @@
     <script>
       $('.slider-client').slick({
         slidesToShow: 4,
-        slidesToScroll: 5,
-        autoplay: false,
-        autoplaySpeed: 1500,
+        slidesToScroll: 1,
         arrows: true,
         nextArrow: '<div class="arrow-client arrow-client_right"></div>',
         prevArrow: '<div class="arrow-client arrow-client_left"></div>',
         responsive: [
           {
+            breakpoint: 992,
+            settings: {
+              arrows: true,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 2
+            }
+          },
+          {
             breakpoint: 768,
             settings: {
-              arrows: false,
+              arrows: true,
               centerMode: true,
               centerPadding: '40px',
               slidesToShow: 1
@@ -429,7 +462,7 @@
           {
             breakpoint: 480,
             settings: {
-              arrows: false,
+              arrows: true,
               centerMode: true,
               centerPadding: '40px',
               slidesToShow: 1
@@ -442,8 +475,20 @@
     <script>
       new WOW().init();
     </script>
-    
-    
+    <script>
+       $(document).ready(function(){
+        $('#link,#types-button,#portfolio-button').on('click', function () {
+          $('#modal-callback').toggleClass('modal_visible');
+        });
+            $('.modal__close').on('click', function () {
+              $('#modal-callback').toggleClass('modal_visible');
+            });
+        });
+ 
+      jQuery(function($){
+            $(".mask").mask("+7(999) 999-9999");
+      });
+    </script>
 
 
        

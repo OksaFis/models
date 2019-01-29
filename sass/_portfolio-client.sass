@@ -1,30 +1,35 @@
 .portfolio-client     
   background-color: #ffffff
   padding-bottom: 176px
-
 .section__title 
   font-size: 24px
   line-height: 22px
   text-align: center
   padding-top: 100px 
   padding-bottom: 100px
-
 .slider-client 
   display: flex !important
   justify-content: center !important
   margin: 0 auto
   width: 1168px
-  
 .slider-client__item 
   display: flex !important
   justify-content: center !important
-  max-width: 175px 
-  margin: 0 28px
+  max-width: 964px 
+  margin: 0 auto
   text-align: center !important
   align-items: center
-  &-img
-    
-    margin: 0 auto 
+  &:hover
+    outline: 0
+    outline-offset: 0
+  &:active
+    outline: 0
+    outline-offset: 0
+  &:focus
+    outline: 0
+    outline-offset: 0 
+  &-img 
+    margin: 0 auto
     text-align: center !important
     align-items: center   
 .arrow-client
@@ -32,11 +37,13 @@
   height: 26px
   opacity: 0.5
   position: absolute
-  a:hover
-    cursor: pointer
+  cursor: pointer
   &_right
     right: 0
     background: url('../img/client/left.png') no-repeat center
   &_left
     left: 0
     background: url('../img/client/right.png') no-repeat center
+
+.slider-client__item .slick-slide .slick-cloned
+  width: 220px !important

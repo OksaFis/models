@@ -23,7 +23,7 @@
   display: flex !important
   justify-content: space-around
   align-items: center
-  margin: 0 
+  margin: 0 auto
   width: 1168px
   &__item
     display: flex !important
@@ -31,7 +31,16 @@
     align-items: center
     width: 906px
     height: 346px
-    margin: 0 
+    margin: 0 auto
+    &:hover
+      outline: 0
+      outline-offset: 0
+    &:active
+      outline: 0
+      outline-offset: 0
+    &:focus
+      outline: 0
+      outline-offset: 0 
     &-img
       width: 409px
       height: 340px
@@ -76,7 +85,7 @@
 .slider-button
   cursor: pointer
   background-color: #23bac1
-  border: 1px solid #23bac1
+  border: none
   width: 216px
   height: 60px
   color: #fff
@@ -85,18 +94,24 @@
   letter-spacing: 0.33px
   text-transform: uppercase
   margin: 49px 0 0 0 
+  &:hover
+    outline: 0
+    outline-offset: 0
+  &:active
+    outline: 0
+    outline-offset: 0
+  &:focus
+    outline: 0
+    outline-offset: 0
 .arrow
+  cursor: pointer
   width: 14px
   height: 26px
   opacity: 0.5
   position: absolute
-  a:hover
-    cursor: pointer
-
   &_right
     right: 0
     background: url('../img/portfolio/back_right.png') no-repeat center
-      
   &_left
     left: 0
     background: url('../img/portfolio/back_left.png') no-repeat center
