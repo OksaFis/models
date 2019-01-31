@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/logo.jpg" type="image/png">
   <link rel="stylesheet" href="css/slick.css">
+  <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(52166512, "init", { id:52166512, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52166512" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   <title>Изготовление макетов</title>
 </head>
 
@@ -16,18 +17,21 @@
     <div class="container">
       <div class="header-wrap">
         
-        <div class="header-wrap__mini">
-          <div class="header-wrap__mini__img"></div>
-          <div class="header-wrap__mini__text">Меню</div>
+        <div class="header-menu">
+        <h1 class="header-menu__text"><a href="#menu_1">Главная</a></h1>
         </div>
         <div class="header-menu">
-        <h1 class="header-menu__text">Главная</h1>
-        <h1 class="header-menu__text">Виды макетов</h1>
-        <h1 class="header-menu__text">Комплектация макетов</h1>
-        <h1 class="header-menu__text">Реализованные проекты</h1>
-        <h1 class="header-menu__text">Наши клиенты</h1>
-        <h1 class="header-menu__text">Контакты</h1>
+        <h1 class="header-menu__text"><a href="#menu_2">Виды макетов</a></h1></div>
+        <div class="header-menu">
+        <h1 class="header-menu__text"><a href="#menu_3">Комплектация макетов</a></h1></div>
+        <div class="header-menu">
+        <h1 class="header-menu__text"><a href="#menu_4">Реализованные проекты</a></h1></div>
+        <div class="header-menu">
+        <h1 class="header-menu__text"><a href="#menu_5">Наши клиенты</a></h1></div>
+        <div class="header-menu">
+        <h1 class="header-menu__text"><a href="#menu_6">Контакты</a></h1>
       </div><!--header-menu-->
+
       <div class="header-contacts">
         <div class="header-contacts__phone">
           <a class="header_phone" href="tel:+78008913333">8 800 891-33-33</a>
@@ -42,40 +46,58 @@
 
   <div class="main">
     <div class="container">
+        <div class="main-wrapper">
+                  
+            <div class="main-wrapper__mini">
+              <div class="main-wrapper__mini__img" id="burger"></div>
+              <div class="main-wrapper__mini__text">Меню</div>
+            </div>
+          <div class="main-wrapper-contacts">
+            <div class="main-wrapper-contacts__phone">
+              <a class="main-wrapper_phone" href="tel:+78008913333">8 800 891-33-33</a>
+            </div><!--main-contacts__phone-->
+            <div class="main-wrapper-contacts__link">
+            <a href="#" class="main-wrapper_link" id="link">Заказать обратный звонок</a>
+            </div><!--main-contacts__link-->
+          </div><!--main-contacts-->
+        </div> <!--main-wrapper-->
       <div class="main-wrap">
-        <div class="main-text">
-          <div class="main-text__title">Изготовление макетов 
-              любой сложности</div>
-              <div class="main-text__subtitle">Продажи. Инвестиции. Имидж.</div>    
-          <div class="main-text__advantages">
-            <ul>
-              <li id="first">Срок производства<br>от 5 дней</li>
-              <li id="second">Гарантия на макеты<br>24 месяца</li>
-              <li id="tree">Проектируем, изготавливаем, доставляем и устанавливаем</li>
-              <li id="four">Застрахуем, доставим и установим</li>
-            </ul>
-          </div><!--main-text__advantages-->
-        </div><!--main-text-->
+
         
-        <div class="main-form">
-            <div class="main-form__title">Оставьте заявку и получите расчет стоимости макета в течение <b>30 минут</b>
-            </div><!--main-form__title-->
-            <form action="mailer/smart.php" method="POST">
-              <input type="text" name="fio" class="input main-form__input" required placeholder="Ваше имя">
-              <input type="tel" name="tel" class="input main-form__input mask" required placeholder="Контактный телефон">
-              <input type="email" name="mail" class="input main-form__input" required placeholder="Электронная почта">
-              <button type="submit" id="main-button" class="button main-form__button">Оставить заявку
-              </button>
-            </form>
+              
+      <div class="main-text">
+        <div class="main-text__title"><a id="menu_1">Изготовление макетов 
+            любой сложности</a></div>
+            <div class="main-text__subtitle">Продажи. Инвестиции. Имидж.</div>    
+        <div class="main-text__advantages">
+          <ul>
+            <li id="first">Срок производства<br>от 5 дней</li>
+            <li id="second">Гарантия на макеты<br>24 месяца</li>
+            <li id="tree">Проектируем, изготавливаем, доставляем и устанавливаем</li>
+            <li id="four">Застрахуем, доставим и установим</li>
+          </ul>
+        </div><!--main-text__advantages-->
+      </div><!--main-text-->
+      
+      <div class="main-form">
+          <div class="main-form__title">Оставьте заявку и получите расчет стоимости макета в течение <b>30 минут</b>
+          </div><!--main-form__title-->
+          <form action="mailer/smart.php" method="POST">
+            <input type="text" name="fio" class="input main-form__input" required placeholder="Ваше имя">
+            <input type="tel" name="tel" class="input main-form__input mask" required placeholder="Контактный телефон">
+            <input type="email" name="mail" class="input main-form__input" required placeholder="Электронная почта">
+            <button type="submit" id="main-button" class="button main-form__button">Оставить заявку
+            </button>
+          </form>
           </div><!--main-form-->
       </div><!--main-wrap-->
     </div><!--container-->
   </div>
 
-       
+         
   <div class="types" id="types">
     <div class="container">
-      <h1 class="section-title section-title_center">Виды макетов</h1>
+      <h1 class="section-title section-title_center"><a id="menu_2">Виды макетов</a></h1>
         <h2 class="section-subtitle">Создаем макеты от небольших домов до космических станций</h2>
       <div class="types-wrap">
 
@@ -162,7 +184,7 @@
         </div>
 
         <div class="types__card">
-          <div class="types__card-title"> Ландшафтные макеты</div>
+          <div class="types__card-title"><a id="menu_3">Ландшафтные макеты</a></div>
           <div class="types__card-img"><img src="img/types/5_.jpg" alt=""></div>
           <div class="types__card-variants">
             <div class="types__card-variants-item">Парки</div>
@@ -195,7 +217,7 @@
   
   <section class="portfolio">
     <div class="container">
-        <h1 class="section-title section-title_center">Реализованные проекты</h1>
+        <h1 class="section-title section-title_center"><a id="menu_4">Реализованные проекты</a></h1>
         <h2 class="section-subtitle">Более 100 компаний уже решают свои бизнес – задачи с помощью наших макетов</h2>
         <div class="slider">
           
@@ -260,7 +282,7 @@
                 </div>
                 </div>
                 </div><!--wrapper-->
-                <button class="button slider-button" id="portfolio-button"> Заказать макет</button>
+                <button class="button slider-button" id="portfolio-button">Заказать макет</button>
             </div>
             </div><!--slider__item-->
           </div><!--slider-->
@@ -335,7 +357,7 @@
   
   <section class="portfolio-client">
     <div class="container">
-        <h1 class="section__title">Наши клиенты</h1>
+        <h1 class="section__title"><a id="menu_5">Наши клиенты</a></h1>
         <div class="slider-client">
           
             <div class="slider-client__item">
@@ -376,8 +398,8 @@
             <img src="img/footer_img.png" alt="">
         </div>
         <div class="adress-text">
-          г. Москва, 
-          Автомоторная улица, 4А, стр.21
+          <a id="menu_6">г. Москва, 
+          Автомоторная улица, 4А, стр.21</a>
         </div>
       </div>
 
@@ -386,7 +408,7 @@
           <a class="contacts_phone" href="tel:+78008913333">8 800 891-33-33</a>
         </div><!--contacts__phone-->
         <div class="contacts-wrap__link">
-        <a href="#" class="contacts_link" id="link">Заказать обратный звонок</a>
+        <a href="#menu_6" class="contacts_link" id="link">Заказать обратный звонок</a>
         </div><!--contacts__link-->
       </div><!---contacts-wrap-->
 
@@ -413,6 +435,46 @@
         </div><!--modal-form-->
   </div><!-- /modal__dialog -->
 </div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $('form').submit(function(event) {
+        event.preventDefault();
+            $.ajax({
+                type:"POST",
+                url: "mailer/smart.php",
+                data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+                alert("Сообщение успешно отправлено");
+            $("form").trigger("reset");
+        });
+        return false;
+    });
+   
+</script>
+
+
+<div class="modal-menu" id="menu-callback">
+  <div class="menu__dialog">
+    <div class="menu__close">&#10006;
+      </div>      
+        <div class="menu-wrap">
+          <h1 class="menu-wrap__text"><a href="#menu_1">Главная</a></h1>
+          </div>
+          <div class="menu-wrap">
+          <h1 class="menu-wrap__text"><a href="#menu_2">Виды макетов</a></h1></div>
+          <div class="menu-wrap">
+          <h1 class="menu-wrap__text"><a href="#menu_3">Комплектация макетов</a></h1></div>
+          <div class="menu-wrap">
+          <h1 class="menu-wrap__text"><a href="#menu_4">Реализованные проекты</a></h1></div>
+          <div class="menu-wrap">
+          <h1 class="menu-wrap__text"><a href="#menu_5">Наши клиенты</a></h1></div>
+          <div class="menu-wrap">
+          <h1 class="menu-wrap__text"><a href="#menu_6">Контакты</a></h1>
+        </div>
+  </div><!-- /modal__dialog -->
+</div>
+
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script></script>
 <script src="js/jquery.maskedinput.js"></script>
@@ -426,7 +488,6 @@
         slidesToScroll: 1,
         autoplay: false,
         centerMode: false,
-        speed: 1500,
         arrows: true,
         nextArrow: '<div class="arrow arrow_right"></div>',
         prevArrow: '<div class="arrow arrow_left"></div>'
@@ -489,6 +550,19 @@
             $(".mask").mask("+7(999) 999-9999");
       });
     </script>
+
+    <script>
+       $(document).ready(function(){
+        $('#burger').on('click', function () {
+          $('#menu-callback').toggleClass('menu_visible');
+        });
+            $('.menu__close').on('click', function () {
+              $('#menu-callback').toggleClass('menu_visible');
+            });
+        });
+
+      </script>
+
 
 
        
