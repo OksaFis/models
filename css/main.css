@@ -1,0 +1,140 @@
+	.header-mobile {
+		display: none;
+		position: fixed;
+		z-index: 5;
+		width: 100%;
+	}
+
+	.header-mobile__wrap {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+
+	.header-mobile__menu {
+		cursor: pointer;
+		margin: 15px 0 15px 15px;
+		position: relative;
+		width: 30px;
+		height: 21px;
+	}
+
+	.header-mobile__menu span {
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		background-color: #f1f1f1;
+		-webkit-transition: 0.5s;
+		transition: 0.5s;
+	}
+
+	.header-mobile__menu span:nth-child(1) {
+		top: 0;
+	}
+
+	.header-mobile__menu span:nth-child(2) {
+		top: 9px;
+	}
+
+	.header-mobile__menu span:nth-child(3) {
+		top: 18px;
+	}
+
+	.menu_open span:nth-child(1) {
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+		top: 9px;
+	}
+
+	.menu_open span:nth-child(2) {
+		width: 0;
+		opacity: 0;
+		-webkit-transition: 0.1s;
+		transition: 0.1s;
+	}
+
+	.menu_open span:nth-child(3) {
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		top: 9px;
+	}
+
+	.menu-mobile {
+		-webkit-transform: translateY(-1px);
+		transform: translateY(-1px);
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.3);
+		left: -100%;
+		-webkit-transition: 0.5s;
+		transition: 0.5s;
+	}
+
+	.menu-block {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		padding: 0;
+		background-color: white;
+		width: 250px;
+		margin: 0;
+	}
+
+	.menu-item {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		color: #2d2d2d;
+		position: relative;
+		padding-left: 13px;
+		font-family: "RobotoMedium";
+		list-style-type: none;
+		text-decoration: none;
+		height: 52px;
+	}
+
+	.menu-item:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 234px;
+		height: 1px;
+		background-color: #95fffe;
+	}
+
+	.menu-item img {
+		height: 25px;
+		margin-right: 6px;
+	}
+
+	.contact_mobile {
+		margin: 24px 0 11px 8px;
+	}
+
+	.menu-open {
+		left: 0;
+	}
+
+	@media (max-width: 992px) {
+		.header-mobile__second {
+			display: block;
+    }
+  }
+
+		@media (max-width: 576px) {
+			.header-mobile {
+				display: block;
+      }
+    }

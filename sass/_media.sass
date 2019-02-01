@@ -1,44 +1,54 @@
 @media (min-width: 1200px) 
   .container
     max-width: 1171px
-  
   .main-wrapper
     display: none
-
+  .portfolio
+    .section-subtitle
+      padding-top: 10px
+      padding-bottom: 60px
   .portfolio-client
   .section__title
     padding-top: 80px 
     padding-bottom: 80px
-
   .slider-client 
-    width: 98%
-
-  
+    width: 98% 
 @media (min-width: 992px) and (max-width: 1200px) 
   .container 
     width: 98%
+  .header
+    &-wrap
+    &-menu
+      &__text a
+        &:hover
+          color: #000000
+    &-contacts
+      &__link a
+        &:hover
+          color: #22bac1
   .main
     &-wrap
       justify-content: space-around
-    &-text
-      &__title
-      &__subtitle
-      &__advantages
-    &__form
-      
-      &__input
+    &-form
       &__button
+        &:hover
+        background-color: #23bac1 !important
   .main-wrapper
     display: none
   .types
     &-wrap
       justify-content: space-around
   .portfolio
+    .section-subtitle
+      padding-top: 10px
+      padding-bottom: 60px
   .slider
     margin: 0 
     width: 100%
     &__item
-      display: block
+      justify-content: space-around      
+  .slider-button
+    background-color: #23bac1 !important
   .customers
   .section_title
     margin: 0 10px
@@ -52,18 +62,25 @@
     padding-bottom: 80px
   .slider-client 
     width: 98%
+  .footer
+  .contacts-wrap
+    &__link a
+      &:hover
+        color: #22bac1 
 
 @media (min-width: 768px) and (max-width: 992px) 
   .container 
-    width: 98%
-    
+    width: 98%    
   .header
-    display: none
+    display: none  
+    &-contacts
+      &__link a
+        &:hover
+          color: #22bac1
   .main
     &-wrap
       justify-content: center
-    &-text
-      
+    &-text      
       &__title
         width: 350px
         padding-top: 100px
@@ -79,6 +96,7 @@
       width: 300px
       &__input
       &__button
+        background-color: #23bac1 !important
   .types
     .section-subtitle
       padding-bottom: 30px
@@ -97,6 +115,10 @@
         color: #ffffff
         border: none
   .portfolio
+    .section-title
+    .section-subtitle
+      padding-top: 20px
+      padding-bottom: 60px
   .slider
     margin: 0 auto
     width: 80%
@@ -107,14 +129,16 @@
       width: 80%
       text-align: center
       &-img
-        margin: 0 auto
+        display: flex       
+        justify-content: center
       &-text
         margin: 0 auto
       .title
         margin-top: 30px 
         margin-bottom: 30px
   .slider-button
-    margin: 30px auto 0 auto
+    margin: 30px auto 0 auto    
+    background-color: #23bac1 !important
   .customers
   .goal
     margin-bottom: 80px
@@ -131,11 +155,22 @@
     padding-bottom: 80px
   .slider-client 
     width: 98%
+  .footer
+  .contacts-wrap
+    &__link a
+      &:hover
+        color: #22bac1  
+  .slider__item-img
+    margin: 0 auto
 @media (min-width: 576px) and (max-width: 767px)
   .container
     width: 98%
   .header
-    display: none
+    display: none  
+    &-contacts
+      &__link a
+        &:hover
+          color: #22bac1
   .main
     flex-wrap: wrap
     &-wrap
@@ -160,8 +195,14 @@
       &__advantages
         margin: 0 auto
         text-align: left
+        padding-bottom: 20px
     &-form
       margin-top: 30px
+      margin-right: 5px
+      width: 300px
+      &__input
+      &__button
+        background-color: #23bac1 !important    
   .types
     .section-title
       padding-top: 40px
@@ -183,6 +224,9 @@
         color: #ffffff
         border: none
   .portfolio
+    .section-subtitle
+      padding-top: 10px
+      padding-bottom: 50px
   .slider
     margin: 0 auto
     width: 80%
@@ -192,8 +236,9 @@
       margin: 0 auto
       width: 80%
       text-align: center
-      &-img
-        margin: 0 auto
+      &-img        
+        display: flex       
+        justify-content: center
       &-text
         margin: 0 auto
       .title
@@ -201,6 +246,7 @@
         margin-bottom: 30px
   .slider-button
     margin: 30px auto 0 auto
+    background-color: #23bac1 !important
   .customers
   .goal
     margin-bottom: 80px
@@ -215,12 +261,23 @@
     padding-bottom: 70px
   .slider-client 
     width: 98%
+  .footer
+  .contacts-wrap
+    &__link a
+      &:hover
+        color: #22bac1  
+  .slider__item-img
+    margin: 0 auto
 
 @media (min-width: 530px) and (max-width: 582px) 
   .container 
     width: 98% 
   .header
-    display: none
+    display: none  
+    &-contacts
+      &__link a
+        &:hover
+          color: #22bac1
   .main
     &-wrap
       justify-content: center
@@ -240,12 +297,14 @@
       &__advantages
         margin: 0 auto
         text-align: left
+        padding-bottom: 20px
     &-form
-      margin-top: 100px
-      margin-right: 15px
+      margin-top: 30px
+      margin-right: 5px
       width: 300px
       &__input
       &__button
+        background-color: #23bac1 !important   
   .types
     .section-title
       padding-top: 30px
@@ -267,6 +326,9 @@
         color: #ffffff
         border: none
   .portfolio
+    .section-subtitle
+      padding-top: 5px
+      padding-bottom: 60px
   .slider
     margin: 0 auto
     width: 80%
@@ -277,14 +339,17 @@
       width: 80%
       text-align: center
       &-img
-        margin: 0 auto
+        display: flex       
+        justify-content: center
       &-text
-        margin: 0 auto
+        margin: 20px auto 10px auto
+
       .title
-        margin-top: 30px 
-        margin-bottom: 30px
+        margin-top: 10px 
+        margin-bottom: 20px
   .slider-button
     margin: 30px auto 0 auto
+    background-color: #23bac1 !important
   .customers
   .section_title
     margin: 0 10px
@@ -303,13 +368,22 @@
     padding-bottom: 60px
   .slider-client 
     width: 98%
+  .footer
+  .contacts-wrap
+    &__link a
+      &:hover
+        color: #22bac1  
 
 @media (max-width: 576px) 
   .container 
-    width: 98%
-    
+    width: 98%    
   .header
-    display: none
+    display: none  
+    &-contacts
+      &__link a
+        &:hover
+          color: #22bac1
+          cursor: pointer
   .main
     flex-wrap: wrap
     &-wrap
@@ -335,9 +409,14 @@
       &__advantages
         margin: 0 auto
         text-align: left
+        padding-bottom: 20px
     &-form
-      width: 300px
       margin-top: 30px
+      margin-right: 5px
+      width: 300px
+      &__input
+      &__button
+        background-color: #23bac1 !important   
   .types
     padding-bottom: 0
     .section-title
@@ -380,19 +459,26 @@
     &__item
       display: block !important
       margin: 0 auto
-      width: 90%
+      width: 100%
       text-align: center
       &-img
+        display: flex       
+        justify-content: center
+        max-width: 310px !important
         margin: 0 auto
+        img
+          height: 250px !important
+          width: 250px !important               
       &-subtitle
         margin-bottom: 30px
       &-text 
-        margin: 50px auto 20px auto
+        margin: -65px auto 10px auto
       .title
         margin-top: 20px 
         margin-bottom: 20px
   .slider-button
     margin: 30px auto 0 auto
+    background-color: #23bac1 !important
   .customers
   .section_title
     margin: 0 10px
@@ -404,18 +490,20 @@
     padding-bottom: 20px
   .goal
     width: 300px
-    margin-bottom: 50px
+    margin-bottom: 50px    
   .portfolio-client
     padding-bottom: 90px
   .section__title
       padding-top: 60px 
       padding-bottom: 60px
   .slider-client 
-    width: 100%
+    width: 95%
     height: 70px
   .slider-client__item 
     width: 310px
     margin: 0 100px
+    &-img
+      width: 120px
   .footer
     height: 280px 
     padding-top: 10px
@@ -451,8 +539,8 @@
         font-size: 13px
         width: 240px
         height: 51px
-
-    
-
-  
-  
+  .footer
+  .contacts-wrap
+    &__link a
+      &:hover
+        color: #22bac1  
